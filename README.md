@@ -1,18 +1,21 @@
 # alx travel app
 
-## Quick setup
+# Instructions
 
-```shell
-python3 -m venv venv  # Create a virtual environment
-source venv/bin/activate  # Activate it
-pip install -r requirements.txt
-```
+Duplicate Project:
 
-### MySQL client installation
+Duplicate the project alx_travel_app_0x02 to alx_travel_app_0x03
+Configure Celery:
 
--   https://pypi.org/project/mysqlclient/
+Set up Celery with RabbitMQ as the message broker.
+Add Celery configurations in settings.py and create a celery.py file in the project root.
+Define Email Task:
 
-```shell
-sudo apt-get install python3-dev default-libmysqlclient-dev build-essential pkg-config
-pip install mysqlclient
-```
+In listings/tasks.py, create a shared task function to send a booking confirmation email.
+Ensure the email task uses the Django email backend configured in settings.py.
+Trigger Email Task:
+
+Modify the BookingViewSet to trigger the email task upon booking creation using delay().
+Test Background Task:
+
+Test the background task to ensure the email is sent asynchronously when a booking is created.
