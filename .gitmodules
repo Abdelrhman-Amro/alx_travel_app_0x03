@@ -1,0 +1,6 @@
+[submodule "previousVersions/alx_travel_app_0x01"]
+	path = previousVersions/alx_travel_app_0x01
+	url = https://github.com/Abdelrhman-Amro/alx_travel_app_0x01.git
+[submodule "alx_travel_app_0x01"]
+	path = alx_travel_app_0x01
+	url = https://github.com/Abdelrhman-Amro/alx_travel_app_0x01.git
