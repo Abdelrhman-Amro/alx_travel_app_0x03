@@ -88,4 +88,4 @@ class Review(models.Model):
         verbose_name = "Review"
 
     def __str__(self):
-        return f"{self.guest.username} - {self.listing.name}"
+        return f"{self.user.username} - {self.listing.name}"
